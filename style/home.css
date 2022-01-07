@@ -1,0 +1,10 @@
+img {
+width : 200px;
+margin: 30px;
+display: inline-block;
+float: left;
+border-radius: 30px
+}
+aside, p{
+  font-size: 30px
+}

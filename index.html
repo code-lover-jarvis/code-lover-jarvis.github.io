@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+    <script src="script/theme.js" charset="utf-8"></script>
+    <script>
+    if(!document.cookie)
+    {
+      let hr = new Date().getHours();
+      if((hr > 18) || (hr < 06))
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/dark.css');
+      }
+      else {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/style.css');
+      }
+    }
+    else {
+      if(document.cookie.search("light") != -1)
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/style.css');
+      }
+      else if (document.cookie.search("dark") != -1)
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/dark.css');
+      }
+      else if (document.cookie.search("night") != -1)
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/night.css');
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="theme">
+        Choose Your Theme :
+       <label class="switch">
+         <input type="radio" name="theme" value="light" onclick="changetheme(this.value)"/>Light &#127774; &ensp;
+       </label>
+       <label class="switch">
+         <input type="radio" name="theme" value="dark" onclick="changetheme(this.value)"/>Dark &#128421; &ensp;
+       </label>
+       <label class="switch">
+         <input type="radio" name="theme" value="night" onclick="changetheme(this.value)"/>Night &#129417;
+       </label>
+      </div>
+      <nav class="main">
+        <a href="#">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+    <img src="img/my_pic_edited.jpg" alt="Pic of Myself"/>
+    <aside>
+      <h1>JIBIN JOY</h1>
+      Welcome to my Page. I'm from Kerala, South India; Graduated in B-tech from Kerala University;
+      love to code and do geeky things. Until now, I have learned few modules in Python
+      viz. Pandas, Numpy, BeautifulSoup, Selenium, thanks to <a target="_blank" href="https://www.dr-chuck.com/">Charles Severance</a> and <a target="_blank" href="https://www.coursera.org/in">Coursera</a> &#128519;.
+      Apart from Python, I strived forward to be a Front-End developer and learned HTML, CSS and JavaScript, thanks to <a target="_blank" href="http://www.collemc.people.si.umich.edu/">Colleen Van Lent</a>.
+      <p>Continue exploring my page and contact me if you have any queries&#128522;.</p>
+    </aside>
+  </body>
+</html>

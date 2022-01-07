@@ -1,0 +1,54 @@
+.Header{
+  background-color: #666666;
+  display: block;
+  padding: 3%;
+  border-bottom-left-radius: 40%;
+  overflow: auto;
+}
+.Header .theme{
+  float: right;
+  display: block;
+  font-size: 1.5rem;
+}
+.Header .main{
+  display: block;
+  float: right;
+  clear: both;
+  margin-top: 10%;
+  color: #ffffff
+}
+nav a{
+  text-decoration: none;
+  font-size: 2rem;
+  padding : 20px;
+  color : #000000;
+  background-color:#66a3ff;
+  margin : 1px;
+  border-radius : 10px
+}
+nav a:hover{
+  background-color: #003d99;
+}
+nav a:active{
+  background-color: #558fbb;
+  color : #000000
+}
+aside, p{
+  font-size: 30px;
+  color: #ffffff;
+}
+aside a{
+  color: #66a3ff;
+}
+body{
+  background-color: #000000
+}
+li{
+  color: #ffffff
+}
+li a{
+  color: #66a3ff;
+}
+h1, h2{
+  color: #ffffff
+}

@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    padding: 0px;
+}
+#myContact li:first-of-type::before
+{
+    content: '\01F4E7 ';
+    margin: 2em
+}
+#myContact li:last-of-type::before
+{
+  content: '\01F4DE';
+  margin : 2em
+}
+img{
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}

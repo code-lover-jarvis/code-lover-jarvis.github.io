@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/theme.js" charset="utf-8"></script>
+    <script>
+    if(!document.cookie)
+    {
+      let hr = new Date().getHours();
+      if((hr > 18) || (hr < 06))
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/dark.css');
+      }
+      else {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/style.css');
+      }
+    }
+    else {
+      if(document.cookie.search("light") != -1)
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/style.css');
+      }
+      else if (document.cookie.search("dark") != -1)
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/dark.css');
+      }else if (document.cookie.search("night") != -1)
+      {
+        document.getElementsByTagName('link')[0].setAttribute('href', 'style/night.css');
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="theme">
+        Choose Your Theme :
+       <label class="switch">
+         <input type="radio" name="theme" value="light" onclick="changetheme(this.value)"/>Light &#127774; &ensp;
+       </label>
+       <label class="switch">
+         <input type="radio" name="theme" value="dark" onclick="changetheme(this.value)"/>Dark &#128421; &ensp;
+       </label>
+       <label class="switch">
+         <input type="radio" name="theme" value="night" onclick="changetheme(this.value)"/>Night &#129417;
+       </label>
+      </div>
+      <nav class="main">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+    <h1>About</h1>
+    <p>This website is  currently made with HTML, CSS and JavaScript. Further updates will be added in future. Feel free
+    to contact for any queries.</p>
+  </body>
