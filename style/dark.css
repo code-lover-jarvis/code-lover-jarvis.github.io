@@ -52,3 +52,9 @@ li a{
 h1, h2{
   color: #ffffff
 }
+@media screen and (min-width:900px)
+{
+  .Header{
+    background-color: #ffffff
+  }
+}
