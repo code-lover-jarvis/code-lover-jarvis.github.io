@@ -5,7 +5,9 @@
     <title>My Page</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <script src="script/theme.js" charset="utf-8"></script>
+    <script src="script/response.js" charset="utf-8"></script>
     <script>
     if(!document.cookie)
     {
@@ -48,7 +50,8 @@
          <input type="radio" name="theme" value="night" onclick="changetheme(this.value)"/>Night &#129417;
        </label>
       </div>
-      <nav class="main">
+      <button class="menu_button" id="mb" onclick="toggling()"><i style="font-size:48px;" class="fas fa-bars fa-3x"></i></button>
+      <nav  id="main" class="main">
         <a href="#">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
@@ -56,12 +59,12 @@
       </nav>
     </div>
     <img src="img/my_pic_edited.jpg" alt="Pic of Myself"/>
-    <aside>
+    <aside onclick="toggling2()">
       <h1>JIBIN JOY</h1>
       Welcome to my Page. I'm from Kerala, South India; Graduated in B-tech from Kerala University;
       love to code and do geeky things. Until now, I have learned few modules in Python
       viz. Pandas, Numpy, BeautifulSoup, Selenium, thanks to <a target="_blank" href="https://www.dr-chuck.com/">Charles Severance</a> and <a target="_blank" href="https://www.coursera.org/in">Coursera</a> &#128519;.
-      Apart from Python, I strived forward to be a Front-End developer and learned HTML, CSS and JavaScript, thanks to <a target="_blank" href="http://www.collemc.people.si.umich.edu/">Colleen Van Lent</a>.
+      Apart from Python, I strive forward to be a Front-End developer and learned HTML, CSS and JavaScript, thanks to <a target="_blank" href="http://www.collemc.people.si.umich.edu/">Colleen Van Lent</a>.
       <p>Continue exploring my page and contact me if you have any queries&#128522;.</p>
     </aside>
   </body>

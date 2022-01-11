@@ -1,34 +1,79 @@
-.Header{
-  background-color: #3385ff;
-  display: block;
-  padding: 3%;
-  border-bottom-left-radius: 40%;
-  overflow: auto;
+@media screen and (min-width:750px)
+{
+  .Header{
+    background-color: #3385ff;
+    display: block;
+    padding: 3%;
+    border-bottom-left-radius: 40%;
+    overflow: auto;
+  }
+  .theme{
+    float: right;
+    display: block;
+    font-size: 1.5rem;
+  }
+  .Header .main{
+    display: block;
+    float: right;
+    clear: both;
+    margin-top: 10%;
+  }
+  nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding : 20px;
+    color : #ffffff;
+    background-color: #003d99;
+    margin : 1px;
+    border-radius : 10px
+  }
+  nav a:hover{
+    background-color: #002a77;
+  }
+  nav a:active{
+    background-color: #558fbb;
+    color : #000000
+  }
+  #mb{
+    display: none;
+  }
 }
-.theme{
-  float: right;
-  display: block;
-  font-size: 1.5rem;
-}
-.Header .main{
-  display: block;
-  float: right;
-  clear: both;
-  margin-top: 10%;
-}
-nav a{
-  text-decoration: none;
-  font-size: 2rem;
-  padding : 20px;
-  color : #ffffff;
-  background-color: #003d99;
-  margin : 1px;
-  border-radius : 10px
-}
-nav a:hover{
-  background-color: #002a77;
-}
-nav a:active{
-  background-color: #558fbb;
-  color : #000000
+@media screen and (max-width:750px)
+{
+  .Header .theme{
+    background-color: #3385ff;
+    padding: 1%;
+  }
+  .hide{
+    display: none;
+  }
+  .main_unhide a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding : 20px;
+    color : #ffffff;
+    background-color: #003d99;
+    margin : 1px;
+    display: block;
+    border-radius : 10px;
+    margin: 5%;
+  }
+  .main{
+    display: none;
+  }
+  .main_unhide{
+    float:left;
+    height: 100vh;
+    position: absolute;
+    background-color: #3385ffee;
+    padding-top: 5%
+  }
+  .main_unhide a:hover{
+    background-color: #002a77;
+  }
+  .main_unhide a:active{
+    background-color: #558fbb;
+    color : #000000
+  }
+
 }

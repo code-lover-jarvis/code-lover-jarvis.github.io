@@ -5,6 +5,8 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="script/response.js" charset="utf-8"></script>
     <script src="script/theme.js" charset="utf-8"></script>
     <script>
     if(!document.cookie)
@@ -48,44 +50,47 @@
          <input type="radio" name="theme" value="night" onclick="changetheme(this.value)"/>Night &#129417;
        </label>
       </div>
-      <nav class="main">
+      <button class="menu_button" id="mb" onclick="toggling()"><i style="font-size:48px;" class="fas fa-bars fa-3x"></i></button>
+      <nav  id="main" class="main">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="#">Contact</a>
         <a href="about.html">About</a>
       </nav>
     </div>
-    <h1>You can contact me via :</h1>
-    <ul id="myContact">
-      <li> <a href="mailto:jibinjoyjuly1996@gmail.com">jibinjoyjuly1996@gmail.com</a></li>
-      <li>+91 88486 88502, +91 80780 02778</li>
-    </ul>
-    <h1>Reference</h1>
-    <div>
-      <img src="img/Image042.jpg" alt="My Mom" width="150px">
-      <aside>
-        Who knows me better than I know about myself?! My Mom <br>
-        <a href="mailto:jjessy55@gmail.com">jjessy55@gmail.com</a>
-      </aside>
-    </div>
-    <div style="clear : both">
-      <img src="img/naveen.jpg" alt="pic of Naveen" width="150px">
-      <aside>
-        A classmate, friend, partner, Naveen George knows quite a few things about me. You could contact him at:
-        <ul>
-          <li>+91 97444 81345</li>
-        </ul>
-      </aside>
-    </div>
-    <div style="clear:both">
-      <img src="img/jithu.jpg" alt="pic of Jithu" width="150px">
-      <aside>
-        Just like Naveen, Jithu is also my friend and partner. Connect with him:
-        <ul>
-          <li>+91 89218 93502</li>
-          <li> <a href="https://www.instagram.com/wandering___explorer/?igshid=11ijk98saxrh8">@wandering___explorer</a></li>
-        </ul>
-      </aside>
+    <div onclick="toggling2()">
+      <h1>You can contact me via :</h1>
+      <ul id="myContact">
+        <li> <a href="mailto:jibinjoyjuly1996@gmail.com">jibinjoyjuly1996@gmail.com</a></li>
+        <li>+91 88486 88502, +91 80780 02778</li>
+      </ul>
+      <h1>Reference</h1>
+      <div>
+        <img src="img/Image042.jpg" alt="My Mom" width="150px">
+        <aside>
+          Who knows me better than I know about myself?! My Mom <br>
+          <a href="mailto:jjessy55@gmail.com">jjessy55@gmail.com</a>
+        </aside>
+      </div>
+      <div style="clear : both">
+        <img src="img/naveen.jpg" alt="pic of Naveen" width="150px">
+        <aside>
+          A classmate, friend, partner, Naveen George knows quite a few things about me. You could contact him at:
+          <ul>
+            <li>+91 97444 81345</li>
+          </ul>
+        </aside>
+      </div>
+      <div style="clear:both">
+        <img src="img/jithu.jpg" alt="pic of Jithu" width="150px">
+        <aside>
+          Just like Naveen, Jithu is also my friend and partner. Connect with him:
+          <ul>
+            <li>+91 89218 93502</li>
+            <li> <a href="https://www.instagram.com/wandering___explorer/?igshid=11ijk98saxrh8">@wandering___explorer</a></li>
+          </ul>
+        </aside>
+      </div>
     </div>
   </body>
 </html>

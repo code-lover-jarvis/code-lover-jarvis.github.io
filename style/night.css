@@ -1,51 +1,111 @@
-.Header{
-  background-color: #330066;
-  display: block;
-  padding: 3%;
-  border-bottom-left-radius: 40%;
-  overflow: auto;
+@media screen and (min-width:750px)
+{
+  .Header{
+    background-color: #330066;
+    display: block;
+    padding: 3%;
+    border-bottom-left-radius: 40%;
+    overflow: auto;
+  }
+  .Header .theme{
+    float: right;
+    display: block;
+    font-size: 1.5rem;
+  }
+  .Header .main{
+    display: block;
+    float: right;
+    clear: both;
+    margin-top: 10%;
+    color: #ffffff
+  }
+  nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding : 20px;
+    color : #ffffff;
+    background-color:#b800e6;
+    margin : 1px;
+    border-radius : 10px
+  }
+  nav a:hover{
+    background-color: #d580ff;
+  }
+  nav a:active{
+    background-color: #440066;
+    color : #e6b3ff
+  }
+  aside, p{
+    font-size: 30px;
+    color: #ffffff;
+  }
+  aside a{
+    color: #66a3ff;
+  }
+  body{
+    background-color: #5c0099
+  }
+  li{
+    color: #ffffff
+  }
+  li a{
+    color: #66a3ff;
+  }
+  #mb{
+    display: none;
+  }
 }
-.Header .theme{
-  float: right;
-  display: block;
-  font-size: 1.5rem;
-}
-.Header .main{
-  display: block;
-  float: right;
-  clear: both;
-  margin-top: 10%;
-  color: #ffffff
-}
-nav a{
-  text-decoration: none;
-  font-size: 2rem;
-  padding : 20px;
-  color : #ffffff;
-  background-color:#b800e6;
-  margin : 1px;
-  border-radius : 10px
-}
-nav a:hover{
-  background-color: #d580ff;
-}
-nav a:active{
-  background-color: #440066;
-  color : #e6b3ff
-}
-aside, p{
-  font-size: 30px;
-  color: #ffffff;
-}
-aside a{
-  color: #66a3ff;
-}
-body{
-  background-color: #5c0099
-}
-li{
-  color: #ffffff
-}
-li a{
-  color: #66a3ff;
+@media screen and (max-width:750px)
+{
+  .Header .theme{
+    background-color: #330066;
+    padding: 1%;
+  }
+  .hide{
+    display: none;
+  }
+  .main_unhide a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding : 20px;
+    color : #ffffff;
+    background-color:#b800e6;
+    margin : 1px;
+    display: block;
+    border-radius : 10px;
+    margin: 5%;
+  }
+  .main{
+    display: none;
+  }
+  .main_unhide{
+    float:left;
+    height: 100vh;
+    position: absolute;
+    background-color: #330066ee;
+    padding-top: 5%
+  }
+  .main_unhide a:hover{
+    background-color: #d580ff;
+  }
+  .main_unhide a:active{
+    background-color: #440066;
+    color : #e6b3ff
+  }
+  aside, p{
+    font-size: 30px;
+    color: #ffffff;
+  }
+  aside a{
+    color: #66a3ff;
+  }
+  body{
+    background-color: #5c0099
+  }
+  li{
+    color: #ffffff
+  }
+  li a{
+    color: #66a3ff;
+  }
 }

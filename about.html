@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>About</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="script/response.js" charset="utf-8"></script>
     <script src="script/theme.js" charset="utf-8"></script>
     <script>
     if(!document.cookie)
@@ -46,14 +48,17 @@
          <input type="radio" name="theme" value="night" onclick="changetheme(this.value)"/>Night &#129417;
        </label>
       </div>
-      <nav class="main">
+      <button class="menu_button" id="mb" onclick="toggling()"><i style="font-size:48px;" class="fas fa-bars fa-3x"></i></button>
+      <nav  id="main" class="main">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
         <a href="#">About</a>
       </nav>
     </div>
-    <h1>About</h1>
-    <p>This website is  currently made with HTML, CSS and JavaScript. Further updates will be added in future. Feel free
-    to contact for any queries.</p>
+    <div onclick="toggling2()">
+      <h1>About</h1>
+      <p>This website is  currently made with HTML, CSS and JavaScript. Further updates will be added in future. Feel free
+      to contact for any queries.</p>
+    </div>
   </body>
